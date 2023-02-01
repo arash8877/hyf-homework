@@ -1,0 +1,218 @@
+*{
+    font-family: Roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 150px;
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+
+/*image section*/
+.image{
+    display: flex;
+    align-items: center;
+}
+
+.image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 100px;
+}
+
+.image h1{
+    font-size: 50px;
+}
+
+.image p{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+
+/*top section*/
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile{
+    width: 60%;
+    background: rgb(243, 241, 241);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.profile p{
+    max-width: 70%;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.contact{
+    width: 20%;
+    font-size: 13px;
+    background: rgb(243, 241, 241);
+    border-radius: 5px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.contact h4{
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.contact p{
+    padding-bottom: 10px;
+}
+
+/*middle section*/
+.middle{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.job{
+    width: 60%;
+    background: rgb(243, 241, 241);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.job h4{
+    padding: 20px 0 15px 0;
+    font-size: 13px;
+}
+
+.job p{
+    color: gray;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.job ul{
+    padding-left: 15px;
+}
+
+.job ul li{
+    padding-bottom: 10px;
+}
+
+.skills-part{
+    width: 20%;  
+    background: rgb(243, 241, 241);
+    border-radius: 5px;
+    padding: 20px;
+    overflow: scroll;
+
+}
+
+.skills-part h4{
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.skills{
+    display: flex;
+}
+
+
+.skills-name p{
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.skills-score > *{
+    display: flex;
+    padding-bottom: 10px;
+
+} 
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-left: 0.5em;
+  }
+  .checked {
+    background-color: grey;
+  }
+
+/*bottom section*/
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.educations{
+    width: 60%;
+    background: rgb(243, 241, 241);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.language{
+    width: 20%;
+    background: rgb(243, 241, 241);
+    border-radius: 5px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.education li{
+    padding: 20px 0 15px 0;
+    font-size: 16px;
+}
+
+.education p{
+    color: gray;
+    font-size: 15px;
+}
+
+.language h4{
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.language p{
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 670px) {
+
+    body{
+        padding: 30px;
+    }
+    .image{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img{
+        margin: 0;
+    }
+    
+    .image h1{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    
+}
+
+
