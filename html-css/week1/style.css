@@ -64,7 +64,6 @@ section{
     background: rgb(243, 241, 241);
     border-radius: 5px;
     padding: 20px;
-    overflow: scroll;
 }
 
 .contact h4{
@@ -114,8 +113,6 @@ section{
     background: rgb(243, 241, 241);
     border-radius: 5px;
     padding: 20px;
-    overflow: scroll;
-
 }
 
 .skills-part h4{
@@ -169,7 +166,6 @@ section{
     background: rgb(243, 241, 241);
     border-radius: 5px;
     padding: 20px;
-    overflow: scroll;
 }
 
 .education li{
@@ -193,10 +189,18 @@ section{
 }
 
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 900px) {
 
     body{
         padding: 30px;
+    }
+
+    section{
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 13px;
     }
     .image{
         flex-direction: column;
@@ -210,7 +214,75 @@ section{
     
     .image h1{
         font-size: 30px;
-        padding-top: 20px;
+        padding-top: 10px;
+    }
+
+    .top{
+        flex-direction: column-reverse;
+    }
+
+    .profile{
+        width: 100%;
+    }
+
+    .profile p{
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .contact{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .middle{
+        flex-direction: column;
+    }
+
+    .job{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .job h4{
+        font-size: 12px;
+    }
+    .job p{
+        font-size: 12px;
+    }
+    
+    .job ul{
+        padding-left: 15px;
+    }
+    
+    .job ul li{
+        font-size: 12px;
+    }
+    
+    .skills-part{
+        width: 100%;  
+    }
+
+    .bottom{
+     flex-direction: column;
+    }
+    
+    .educations{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .language{
+        width: 100%;
+    }
+    
+    .education li{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    
+    .education p{
+        font-size: 12px;
     }
     
 }
