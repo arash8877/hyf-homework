@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(35, 16, 22, 0.3);
+
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 53px;
+}
+
+header h1 {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: montserrat;
+    color: #ffff;
+    text-align: center;
+}
+
+header p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: montserrat;
+    color: #ffff;
+    text-align: center;
+    margin: 17px 0 45px 0;
+}
+
+
+.top {
+    background: linear-gradient(90deg, #FD7B46, #FE4E9B);
+    padding: 31px 20px 27px 20px;
+    color: #fff;
+}
+
+.top h4 {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 18px;
+}
+
+.value1,
+.value2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.value1 {
+    border-bottom: 1px solid #fff;
+}
+
+.value1 p {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 6px;
+}
+
+.value2 p {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.bottom {
+    padding: 34px 20px 39px 20px;
+    background-color: #fff;
+}
+
+.bottom h4 {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.methods {
+    display: flex;
+    justify-content: space-between;
+    margin: 21px 0 69px 0;
+}
+
+.methods .label-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* IMAGE STYLES */
+[type=radio]+div {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 370px;
+    height:110px;
+    box-shadow: 8px 8px 20px 0px rgba(0, 0, 0, 0.3);;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked+div {
+    outline: 4px solid #FE4E9B;
+}
+
+.visa-card {
+    width: 138.5px;
+}
+
+.paypal {
+    width: 33.85px;
+}
+
+.method-text{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(147, 147, 147, 1);
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    gap: 36px;
+}
+
+.card .double{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.card-number {
+    text-align: center;
+}
+
+.card label{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(147, 147, 147, 1);
+}
+
+.card-number .numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(243, 241, 242, 1);
+    border: 1px solid rgba(147, 147, 147, 1);
+    border-radius: 4px;
+    margin-top: 19px;
+    width: 342px;
+    height: 44px;
+}
+
+.numbers #numbers {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 16px;
+}
+
+.numbers .question1 {
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    margin: 10px 14px 10px 0;
+    cursor: pointer;
+}
+
+.numbers label {
+    text-align: center;
+}
+
+
+
+.question2 {
+    width: 24px;
+    height: 24px;
+}
+
+.date{
+    text-align: center;
+}
+
+.card-expiry {
+    position: relative;
+    background-color: rgba(243, 241, 242, 1);
+    border: 1px solid rgba(147, 147, 147, 1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 36px;
+    font-size: 24px;
+    margin-top: 19px;
+    height: 44px;
+    width: 162px;
+}
+
+.card-expiry:after {
+    content: '/';
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    color: #aaa;
+}
+
+input.exp {
+    float: left;
+    font-family: monospace;
+    border: none;
+    outline: none;
+    width: 18px;
+    appearance: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.card-cvv{
+    text-align: center;
+}
+
+.card-cvv .cvv-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(243, 241, 242, 1);
+    border: 1px solid rgba(147, 147, 147, 1);
+    border-radius: 4px;
+    margin-top: 19px;
+    height: 44px;
+    width: 199px;
+}
+
+.cvv-numbers #cvv {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 16px;
+}
+
+.cvv-numbers .question2 {
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    margin: 10px 14px 10px 0;
+    cursor: pointer;
+}
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm-btn{
+    width: 326px;
+    height: 68px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #FD7B46, #FE4E9B);
+    border-radius: 68px;
+    margin: 54px 0 23px 0;
+}
+
+.btn-wrapper a{
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient( 9.0deg, #FE4E9B 30.0%, #FD7B46 60.0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+@media screen and (max-width: 300px) {
+
+    .container{
+        width: 300px;
+    }
+
+    header{
+        text-align: center;
+        margin-top: 13px;
+    }
+
+    header h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    header p{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+
+    .top{
+    padding: 19px 20px 27px 20px;
+    }
+
+    .top h4{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .methods{
+        margin-bottom: 35px;
+    }
+
+    /* IMAGE STYLES */
+    [type=radio]+div {
+        width: 120px;
+    }
+
+    .visa-card{
+        width: 100px;
+    }
+
+    .paypal{
+        width: 22px;
+    }
+
+    .method-text{
+        font-size: 12px;
+        font-weight: 700;
+        padding-top: 20px;
+    }
+
+    .card{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-number{
+        text-align: center;
+    }
+
+    .card label{
+        font-size: 16px;
+    }
+
+    .card .numbers{
+        width: 260px;
+    }
+
+    .card-expiry{
+        width: 130px;
+    }
+
+    .card-cvv .cvv-numbers{
+        width: 120px;
+    }
+
+    .confirm-btn{
+        width: 260px;
+        margin: 39px 0 13px 0;
+    }
+
+}
+
+@media screen and (max-width: 790px){
+
+    [type=radio]+div{
+        max-width: 270px;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 20px;
+}
+}
+
+@media screen and (max-width: 590px){
+    [type=radio]+div{
+        max-width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    [type=radio]+div{
+        max-width: 130px;
+    }
+}
