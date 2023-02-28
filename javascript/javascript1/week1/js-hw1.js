@@ -21,3 +21,22 @@ if (shouldShowResultInDogYears) {
     `Your dog will be ${dogYear} human years old in ${dogYearFuture}`
   );
 }
+
+// Housey pricey
+let wide = 5;
+let deep = 11;
+let high = 8;
+let gardenSizeInM2 = 70;
+
+const volumeInMeters = wide * deep * high;
+const housePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
+
+let paidPrice = 2500000;
+
+if (paidPrice > housePrice) {
+  console.log("You are paying too much.");
+} else if (paidPrice < housePrice) {
+  console.log("You are paying too little");
+} else {
+  console.log("The price is right.");
+}
