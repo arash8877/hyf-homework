@@ -40,3 +40,33 @@ if (paidPrice > housePrice) {
 } else {
   console.log("The price is right.");
 }
+
+// Ez Namey
+const firstWords = [
+    "Easy",
+    "Nice",
+    "Awesome",
+    "Great",
+    "Popular",
+    "Large",
+    "Smart",
+    "Cool",
+    "City",
+    "Best"
+  ];
+  const secondWords = [
+    "Corporation",
+    "Collaboration",
+    "Factory",
+    "Solution",
+    "Evolution",
+    "Innovation",
+    "Circle",
+    "FFC",
+    "COC",
+    "PPN"
+  ];
+  const randomNumber = Math.floor(Math.random() * 10);
+  let startupName = `${firstWords[randomNumber]} ${secondWords[randomNumber]}`;
+  console.log(`Suggested name for the startup: ${startupName}`);
+  
