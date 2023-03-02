@@ -23,15 +23,15 @@ if (shouldShowResultInDogYears) {
 }
 
 // Housey pricey
-let wide = 5;
-let deep = 11;
-let high = 8;
-let gardenSizeInM2 = 70;
+const wide = 5;
+const deep = 11;
+const high = 8;
+const gardenSizeInM2 = 70;
 
 const volumeInMeters = wide * deep * high;
 const housePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
 
-let paidPrice = 2500000;
+const paidPrice = 2500000;
 
 if (paidPrice > housePrice) {
   console.log("You are paying too much.");
