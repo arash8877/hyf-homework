@@ -9,11 +9,10 @@ const names = [
   "katrine",
   "Tala",
 ];
-const nameToRemove = "Ahmad";
-names.splice(1, 1);
+const nameToRemove = "Rasmus";
 
-console.log(names);
-
+let newNames = names.filter((name) => name !== nameToRemove);
+console.log(newNames);
 
 // When will we be there??
 const travelInformation = {
@@ -29,7 +28,6 @@ function travelTime() {
   return `${hours} hours and ${minutes} minutes`;
 }
 console.log(travelTime());
-
 
 // Series duration of my life
 const seriesDurations = [
@@ -79,14 +77,12 @@ function timeOfLife() {
 
 timeOfLife();
 
-const initialValue = 0;
 const totalTimeSpent = totalTime.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
-  initialValue
+  0
 );
 
 console.log(`In total that is ${totalTimeSpent.toFixed(4)}% of my life`);
-
 
 //NOnoN0nOYes (Note taking app)
 let notes = [];
@@ -104,7 +100,7 @@ saveNote("This is the 3. note", 3);
 console.log(notes);
 
 function getNote(id) {
-  notes.map((item) => {
+  notes.forEach((item) => {
     if (item.id === id) {
       console.log(item);
     } else {
@@ -154,7 +150,7 @@ const limitTime = 150;
 
 function showStatus() {
   const numberOfActivities = activities.length;
-  activities.map((item) => (sum += item.duration));
+  activities.forEach((item) => (sum += item.duration));
   return `You have added ${numberOfActivities} activities. They amount to ${sum} min. of usage.`;
 }
 console.log(showStatus());
@@ -168,11 +164,12 @@ function statusSpecificDate(date) {
 }
 console.log(statusSpecificDate("2023-03-12"));
 
-
 const durationValues = activities.map((item) => {
   return item.duration;
 });
 const maxDuration = Math.max(...durationValues);
 const mostTimeSpent = activities.find((item) => item.duration === maxDuration);
 
-console.log(`The activity you have spent most time on is: ${mostTimeSpent.activity}`);
+console.log(
+  `The activity you have spent most time on is: ${mostTimeSpent.activity}`
+);
