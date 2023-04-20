@@ -1,0 +1,264 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--primary-color);
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,
+h1,
+h2 {
+    margin: 0;
+}
+
+:root {
+    --primary-color:#f5f2f2;
+    --secondary-color:antiquewhite;
+}
+
+.dark-theme {
+    --primary-color:#414346;
+    --secondary-color: #93877a;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#search,
+#price {
+    margin: 0px 0 15px 5px;
+}
+
+#search input,
+#price input {
+    height: 30px;
+    width: 200px;
+    background: transparent;
+    border: 1px solid #5555;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+#sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100px;
+}
+
+#sort label {
+    padding-bottom: 28px;
+    font-weight: 400;
+    color: rgb(67, 66, 66);
+}
+
+#sort select {
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #5555;
+    color: rgb(67, 66, 66);
+    border-radius: 5px;
+}
+
+header {
+    height: 70px;
+    background-color: #576CBC;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #ffff;
+}
+nav ul li a:hover{
+    color: rgb(182, 160, 89);
+}
+
+.logo {
+    margin-left: 60px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#icon {
+    cursor: pointer;
+    width: 50px;
+}
+
+main {
+    padding: 0 60px 30px 60px;
+    background-color: var(--primary-color);
+}
+
+main ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+main ul li {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(67, 66, 66);
+}
+
+main ul li h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+#main-top {
+    height: 150px;
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+}
+
+#main-top i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#slogan {
+    display: inline-block;
+}
+
+#slogan p {
+    color: #576CBC;
+    font-size: 30px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-timing-function: steps(25, jump-start);
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 1s;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+footer {
+    height: 250px;
+    background-color: #576CBC;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 40px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section ul li {
+    padding-bottom: 10px;
+    color: #F9FBFD;
+}
+
+#icon{
+    cursor: pointer;
+    color: #414346;
+}
+
+.footer-section ul li a {
+    color: #F9FBFD;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer-section .footer-title {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.section-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-logo span {
+    color: #F9FBFD;
+    font-size: 17px;
+    font-weight: 00;
+}
+
+.section-logo .logo {
+    margin: 0;
+}
+
+#footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#footer-social {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#footer-social a img {
+    width: 30px;
+    height: 30px;
+
+}
