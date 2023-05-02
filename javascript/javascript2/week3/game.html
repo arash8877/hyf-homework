@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./game.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="icon-wrapper">
+        <img
+          src="https://cdn3.iconfinder.com/data/icons/meteocons/512/moon-symbol-1024.png"
+          id="icon"
+        />
+      </div>
+      <div id="count">
+        Time: <time id="countdown"></time>
+      </div>
+      <section>
+        <h1>Fastest Presser</h1>
+        <form>
+          <input
+            id="input"
+            type="number"
+            min="1"
+            oninput="validity.valid||(value='');"
+            required
+          />
+          <button id="btn" type="submit">Start Game</button>
+        </form>
+      </section>
+      <div class="game-body">
+        <div class="side" id="sideS">
+          <div class="pressS">
+            <h3>Press S</h3>
+            <p id="sNumber"></p>
+          </div>
+        </div>
+
+        <div class="side" id="sideL">
+          <div class="pressL">
+            <h3>Press L</h3>
+            <p id="lNumber"></p>
+          </div>
+        </div>
+      </div>
+      <div id="reset-container">
+        <button id="reset-btn">Reset</button>
+      </div>
+    </div>
+
+    <script src="./game.js"></script>
+  </body>
+</html>

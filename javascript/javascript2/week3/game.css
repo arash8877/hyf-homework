@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary-color:#f5f2f2;
+    --secondary-color:rgb(56, 55, 53);
+    --third-color:rgb(252, 251, 250);
+    --forth-color:rgb(66, 65, 65);
+}
+
+.dark-theme {
+    --primary-color:#414346;
+    --secondary-color: #93877a;
+    --third-color:#a7a4a1;
+    --forth-color:rgb(119, 116, 115);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+#icon {
+    width: 3rem;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#count {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--forth-color);
+}
+
+section, .game-body {
+    margin-inline: auto;
+    width: min(50%, 70rem);
+}
+
+section h1 {
+    padding: 5rem 0;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--forth-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+form input {
+    border: none;
+    height: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--third-color);
+}
+
+form button {
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 16rem;
+    background-color: green;
+    font-weight: 700;
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.game-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 2px var(--secondary-color);
+    height: 20rem;
+}
+
+.side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pressS, .pressL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sideS {
+    border-right: solid 2px var(--secondary-color);
+}
+
+h3 {
+    animation: seesaw 1s linear infinite;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--forth-color);
+}
+
+@keyframes seesaw {
+    0% {
+        transform: rotate(5deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+#reset-btn {
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 6rem;
+    background-color: rgb(196, 57, 36);
+    color: var(--third-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.winner {
+    background-color: aquamarine;
+  }
