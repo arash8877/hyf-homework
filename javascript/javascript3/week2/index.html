@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./style.css" />
+<script src="https://kit.fontawesome.com/576e472e94.js" crossorigin="anonymous"></script>
+<title>Currency calculator</title>
+</head>
+<body>
+
+<section class="bg-dark">
+<div class="container">
+<h2 class="text-center">Convert Currency</h2>
+<div class="amount-wrapper">
+<label for="amount">Enter the amount</label>
+<input type="number" id="amount" min="0"/>
+</div>
+<div class="split-wrapper">
+<div class="split">
+<div class="drop-down">
+<label for="currency-from">Currency to convert from:</label>
+<select id="currency-from"
+<option class="text-center"></option>
+</select>
+</div>
+<button id="switch">
+  <i class="fa-solid fa-arrow-right-arrow-left fa-2xl" style="color: #f3eed9;"></i>
+</button>
+<div class="drop-down">
+<label for="currency-to">Currency to convert to:</label>
+<select id="currency-to">
+<option class="text-center"></option>
+</select>
+</div>
+</div>
+</div>
+<div class="result">
+<button id="btn">Convert</button>
+<P id="output">Result:</P>
+</div>
+</div>
+</section>
+
+<script src="./app.js"></script>
+</body>
+</html>

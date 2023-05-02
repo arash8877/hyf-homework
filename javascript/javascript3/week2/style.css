@@ -1,0 +1,155 @@
+:root {
+    --clr--primary-200: #F3EED9;
+    --clr--primary-400: #824936;
+    
+    --clr--neutral-100: #FFF;
+    --clr--neutral-900: #222C2A;
+    
+    --ff-primary: 'Roboto', sans-serif;
+    }
+    
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+    
+    body{
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    }
+    
+    .container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .text-center{
+    text-align: center;
+    }
+    
+    .bg-dark {
+    background-color: var(--clr--neutral-900);
+    color: var(--clr--neutral-100);
+    padding: 4rem 0;
+    display: flex;
+    height: 100vh;
+    }
+    
+    .bg-dark h2{
+    margin: 1.8rem 0 4rem 0;
+    color: var(--clr--primary-200);
+    }
+    
+    .amount-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-inline: auto;
+    width: max(40%);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    }
+    
+    .split {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.5s ease-out;
+    }
+
+    #switch {
+        background: transparent;
+        border: none;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .drop-down{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: max(70%);
+    font-size: 0.8rem;
+    font-weight: 500;
+    }
+    
+    select, input, #output {
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 700;
+    background-color: var(--clr--primary-200);
+    text-align: center;
+    }
+    
+    .result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 6rem;
+    }
+    
+    #btn {
+    width: 6rem;
+    height: 1.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: coral;
+    color: var(--clr--neutral-900);
+    cursor: pointer;
+    }
+    
+    button:active {
+    transform: scale(0.97);
+    }
+
+    #output {
+        width: 10rem;
+        color: var(--clr--neutral-900);
+    }
+    
+    
+    @media (min-width: 600px) {
+        .bg-dark h2{
+            margin: 3rem 0 6rem 0;
+            }
+    .amount-wrapper {
+    width: max(20%);
+    }
+    
+    .split {
+    flex-direction: row;
+    gap: 10em;
+    }
+    
+    .drop-down {
+    width: max(35%);
+    }
+
+    .bg-light {
+        display: none;
+    }
+
+    #switch {
+        height: 3rem;
+        position: relative;
+    }
+
+    #switch i {
+        position: absolute;
+        bottom: 0;
+    }
+
+    }
