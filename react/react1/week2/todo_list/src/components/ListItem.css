@@ -1,0 +1,39 @@
+li {
+  font-weight: 700;
+  list-style: outside;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #6666;
+}
+
+.list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 18rem;
+  /* gap: 1rem; */
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 6rem;
+}
+
+.delete-btn {
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  background-color: crimson;
+  color: #ffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.delete-btn:active {
+  transform: scale(0.97);
+}
+
