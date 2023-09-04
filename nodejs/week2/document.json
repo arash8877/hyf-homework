@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Used Apple Airpods",
+        "price": "50",
+        "description": "Battery life is not great"
+    },
+    {
+        "id": 2,
+        "type": "doc",
+        "value": "hello world"
+    },
+    {
+        "id": 3,
+        "name": "New Samsung Galaxy S21",
+        "price": "800",
+        "description": "Latest flagship smartphone"
+    },
+    {
+        "id": 4,
+        "type": "doc",
+        "value": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "id": 5,
+        "name": "Wireless Bluetooth Headphones",
+        "price": "100",
+        "description": "High-quality audio experience"
+    },
+    {
+        "id": 6,
+        "type": "doc",
+        "value": "This is a sample document"
+    },
+    {
+        "id": 7,
+        "name": "Smart Watch",
+        "price": "150",
+        "description": "Tracks fitness activities"
+    },
+    {
+        "id": 8,
+        "type": "doc",
+        "value": "Sample text for the document"
+    },
+    {
+        "id": 9,
+        "name": "Gaming Laptop",
+        "price": "2000",
+        "description": "Powerful hardware for gaming"
+    },
+    {
+        "id": 10,
+        "type": "doc",
+        "value": "Document content goes here"
+    }
+]
+
