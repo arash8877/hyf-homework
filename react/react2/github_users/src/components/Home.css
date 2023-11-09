@@ -1,0 +1,33 @@
+.home-container {
+    background-color: #7777;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.layout {
+    background-color: #ffff;
+    margin-inline: auto;
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 30rem;
+    min-height: 20rem;
+    margin-top: 5rem;
+}
+
+.layout ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+.error {
+    color: red;
+}
+
+.loading {
+    color: green;
+}
+
